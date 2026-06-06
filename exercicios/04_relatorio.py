@@ -53,10 +53,12 @@ for produto in produtos:
     valor_produto = produto["preco"] * produto["quantidade"]
     print(f"Subtotal: R$ {valor_produto:.2f}")
     print("---------------------")
+    
     total += valor_produto
 
 
 # 4. Exiba o valor total em estoque
 print(f"O valor total em estoque é de R$ {total:.2f}")
+
 
 
