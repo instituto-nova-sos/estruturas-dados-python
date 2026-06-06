@@ -29,10 +29,15 @@
 
 
 # 1. Estrutura inicial sugerida — adicione mais produtos
+print("=" * 50)
+print("RELATÓRIO DE PRODUTOS")
+print("=" * 50)
+
 produtos = [
     {"nome": "Caderno", "preco": 15.0, "quantidade": 10},
-    # adicione mais produtos aqui
-]
+    {"nome": "Agenda", "preco": 19.9, "quantidade": 5},
+    {"nome": "Caneta", "preco": 4.50, "quantidade":38}
+] 
 
 
 # 2. Crie uma variável "total" iniciando em 0
@@ -41,8 +46,19 @@ total = 0
 
 # 3. Percorra a lista de produtos e calcule o subtotal de cada um.
 #    Some os subtotais na variável "total".
-
+for produto in produtos:
+    print("Produto:", produto["nome"])
+    print("Preço: R$", produto["preco"])
+    print("Quant.:", produto["quantidade"])
+    valor_produto = produto["preco"] * produto["quantidade"]
+    print(f"Subtotal: R$ {valor_produto:.2f}")
+    print("---------------------")
+    
+    total += valor_produto
 
 
 # 4. Exiba o valor total em estoque
+print(f"O valor total em estoque é de R$ {total:.2f}")
+
+
 
