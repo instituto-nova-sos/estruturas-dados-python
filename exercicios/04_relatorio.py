@@ -32,8 +32,9 @@
 produtos = [
     {"nome": "Caderno", "preco": 15.0, "quantidade": 10},
     # adicione mais produtos aqui
-]
-
+    {"nome": "livro", "preco": 50.0, "quantidade": 10},
+    {"nome": "lapis", "preco": 2.0, "quantidade": 20},
+] 
 
 # 2. Crie uma variável "total" iniciando em 0
 total = 0
@@ -41,8 +42,20 @@ total = 0
 
 # 3. Percorra a lista de produtos e calcule o subtotal de cada um.
 #    Some os subtotais na variável "total".
+print('-----ESTOQUE-----')
 
+for item in produtos:
+    nome = item["nome"]
+    preco = item["preco"]
+    quantidade = item["quantidade"]
+    total_em_material = preco * quantidade
 
-
+    total += total_em_material
 # 4. Exiba o valor total em estoque
+    print(f"Produto: {nome} | Preço: R${preco:.2f} | Qtd: {quantidade} | Subtotal: R${total_em_material:.2f}")
 
+print("-" * 40)
+
+print(f"VALOR TOTAL EM ESTOQUE: R${total:.2f}")
+
+print("." * 40)
