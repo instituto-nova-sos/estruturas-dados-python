@@ -25,20 +25,30 @@
 
 
 # 1. Crie o dicionário "pessoa" com nome, idade, cidade e profissão
-pessoa = {}
+pessoa = {
+    "nome": "João",
+    "idade": "30",
+    "cidade": "João pessoa",
+    "profissão": "mecânico"
+}
 
 
 # 2. Exiba cada informação
-
+print("Nome:", pessoa["nome"])
+print("Idade:", pessoa["idade"])
+print("Cidade:", pessoa["cidade"])
+print("Profissão:", pessoa["profissão"])
 
 
 # 3. Altere a idade da pessoa
-
+pessoa["idade"] = 48
 
 
 # 4. Adicione uma nova chave "email"
-
+pessoa["email"] = "sla@gmail.com"
 
 
 # 5. Percorra o dicionário com for e mostre chave -> valor
+for  chave, valor in pessoa.items():
+    print(f"{chave} -> {valor}")
 
