@@ -31,20 +31,32 @@ notas = [7, 8, 6, 10, 5, 9, 4]
 
 
 # 1. Calcule a soma das notas usando um for
-
+soma_notas = 0
+for nota in notas:
+    soma_notas += nota
 
 
 # 2. Calcule a média
+media_notas = soma_notas / len(notas)
 
 
 
 # 3. Encontre a maior nota
-
+maior = notas[0]  # Suponha que a primeira nota é a maior
+for nota in notas:
+    if nota > maior:
+        maior = nota
 
 
 # 4. Encontre a menor nota
-
+menor = notas[0]  # Suponha que a primeira nota é a menor
+for nota in notas:
+    if nota < menor:
+        menor = nota
 
 
 # 5. Exiba os resultados (soma, média, maior e menor)
-
+print("Soma das notas:", soma_notas)
+print("Média das notas:", media_notas)
+print("Maior nota:", maior)
+print("Menor nota:", menor)
