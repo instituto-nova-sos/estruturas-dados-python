@@ -20,20 +20,22 @@
 
 
 # 1. Crie aqui a lista inicial de compras
-compras = []
+compras = ["arroz", "feijão", "leite"]
 
 
 # 2. Adicione mais 2 itens com append
-
+compras.append("macarrão")
+compras.append("açúcar")
 
 
 # 3. Remova 1 item com remove
-
+compras.remove("feijão")
 
 
 # 4. Mostre o tamanho da lista
-
+print("Tamanho da lista de compras:", len(compras))
 
 
 # 5. Percorra a lista e exiba cada item
-
+for item in compras:
+    print(item)
