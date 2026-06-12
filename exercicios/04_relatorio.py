@@ -67,7 +67,7 @@ def formata_brl(valor):
 
 # 3. Percorra a lista de produtos e calcule o subtotal de cada um.
 #    Some os subtotais na variável "total".
-# extra: saida formatada em R$ com 2 casas decimais usanddo notação brasileira
+# extra: saída formatada em R$ com 2 casas decimais usando notação brasileira
 for produto in produtos:
     subtotal = produto["preco"] * produto["quantidade"]
     total += subtotal

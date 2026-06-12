@@ -18,7 +18,7 @@
 #   5. Percorra o dicionário com for e mostre chave -> valor.
 #
 # DICAS:
-#   - Dicionários (JSON) usam chaves: { "chave": "valor" }
+#   - Dicionários usam pares chave/valor: { "chave": "valor" }
 #   - Para percorrer chave e valor, use:
 #       for chave, valor in pessoa.items():
 # ============================================================
@@ -46,7 +46,7 @@ pessoa["idade"] = 48
 
 
 # 4. Adicione uma nova chave "email"
-pessoa["email"] = "brunocampos.ssa@gmail.com"
+pessoa["email"] = "joao.silva@exemplo.com"
 
 
 
